@@ -1,0 +1,38 @@
+query docs($relativePath: String!) {
+  docs(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...DocsParts
+  }
+}
+
+query docsConnection {
+  docsConnection {
+    totalCount
+    edges {
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...DocsParts
+      }
+    }
+  }
+}
