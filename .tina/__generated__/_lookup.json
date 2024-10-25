@@ -1,0 +1,51 @@
+{
+  "DocumentConnection": {
+    "type": "DocumentConnection",
+    "resolveType": "multiCollectionDocumentList",
+    "collections": [
+      "docs"
+    ]
+  },
+  "Node": {
+    "type": "Node",
+    "resolveType": "nodeDocument"
+  },
+  "DocumentNode": {
+    "type": "DocumentNode",
+    "resolveType": "multiCollectionDocument",
+    "createDocument": "create",
+    "updateDocument": "update"
+  },
+  "PostsDocument": {
+    "type": "PostsDocument",
+    "resolveType": "collectionDocument",
+    "collection": "posts"
+  },
+  "PostsConnection": {
+    "type": "PostsConnection",
+    "resolveType": "collectionDocumentList",
+    "collection": "posts"
+  },
+  "DocsDocument": {
+    "type": "DocsDocument",
+    "resolveType": "collectionDocument",
+    "collection": "docs",
+    "createDocsDocument": "create",
+    "updateDocsDocument": "update"
+  },
+  "DocsConnection": {
+    "type": "DocsConnection",
+    "resolveType": "collectionDocumentList",
+    "collection": "docs"
+  },
+  "GuidesDocument": {
+    "type": "GuidesDocument",
+    "resolveType": "collectionDocument",
+    "collection": "guides"
+  },
+  "GuidesConnection": {
+    "type": "GuidesConnection",
+    "resolveType": "collectionDocumentList",
+    "collection": "guides"
+  }
+}
